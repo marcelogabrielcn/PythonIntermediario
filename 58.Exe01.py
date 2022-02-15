@@ -1,13 +1,10 @@
-def func1(v1):
-    r1 = func2(v1)
-    return r1
+def hello():
+    return 'Hello World!'
 
 
-def func2(v1):
-    v1 = v1 + 10
-    return v1
+def mestre(func):
+    return func()
 
 
-valor = 100
-result = func1(valor)
-print(result)
+var = mestre(hello)
+print(var)
