@@ -34,3 +34,11 @@ for pk, pv in perguntas.items():
 
     if resposta_user == pv['resposta_certa']:
         print('Obaaa!!!! Você acertooou! ><><><><')
+        respostas_certas += 1
+    else:
+        print('Oops, você errou. :( ')
+
+print(f'Total de acertos: {respostas_certas}')
+qtd_perguntas = len(perguntas)
+porc_acertos = (respostas_certas * 100) / qtd_perguntas
+print(f'Você teve um aproveitamento de {porc_acertos}% de respostas certas')
