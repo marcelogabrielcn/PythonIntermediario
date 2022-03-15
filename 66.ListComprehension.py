@@ -20,3 +20,9 @@ print('hello')
 list7 = list(range(51))
 list8 = [n for n in list7 if n % 2 == 0]
 print(list8)
+
+list9 = [n if n % 2 == 0 else 'Número Ímpar' for n in list7]
+print(list9)
+
+list10 = [n if n % 3 == 0 and n % 8 == 0 else 0 for n in list7]
+print(list10)
