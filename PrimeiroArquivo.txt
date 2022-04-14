@@ -1,0 +1,7 @@
+Arquivo txt criado pela aula 89
+Linha 2
+Linha 3
+Linha 4
+LinhaX
+LinhaY
+LinhaZ
