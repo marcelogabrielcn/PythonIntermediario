@@ -10,11 +10,10 @@ def valida_cnpj(cnpj):
     d1 = verifica_d1(cnpj_limpo)
     d2 = verifica_d2(cnpj_limpo, d1)
 
-    print(cnpj_limpo)
-    print(cnpj_limpo[12], cnpj_limpo[13])
-    print(d1)
-    print(d2)
-
+    # print(cnpj_limpo)
+    # print(cnpj_limpo[12], cnpj_limpo[13])
+    # print(d1)
+    # print(d2)
     if int(cnpj_limpo[12]) is d1 and int(cnpj_limpo[13]) == d2:
         return True
     else:
@@ -22,6 +21,7 @@ def valida_cnpj(cnpj):
 
 
 def remover_carcteres(cnpj):
+    # return re.sub(r'[^0-9]', '', cnpj)
     return re.sub(r'\D', '', cnpj)  # Remover tudo que for diferente de 0 a 9
 
 
